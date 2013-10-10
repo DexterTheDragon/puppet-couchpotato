@@ -1,0 +1,36 @@
+# MANAGED BY PUPPET
+
+<% if @run_as -%>
+#$RUN_AS, username to run couchpotato under, the default is couchpotato
+CP_USER=<%= @run_as %>
+
+<% end -%>
+<% if @app_path -%>
+#$APP_PATH, the location of couchpotato.py, the default is /opt/couchpotato
+CP_HOME=<%= @app_path %>
+
+<% end -%>
+<% if @data_dir -%>
+#$DATA_DIR, the location of couchpotato.db, cache, logs, the default is /var/couchpotato
+CP_DATA=<%= @data_dir %>
+
+<% end -%>
+<% if @pid_file -%>
+#$PID_FILE, the location of couchpotato.pid, the default is /var/run/couchpotato.pid
+CP_PIDFILE=<%= @pid_file %>
+
+<% end -%>
+<% if @python_bin -%>
+#$DAEMON, the location of the python binary, the default is /usr/bin/python
+PYTHON_BIN=<%= @python_bin %>
+
+<% end -%>
+<% if @extra_daemon_opts -%>
+#$EXTRA_DAEMON_OPTS, extra cli option for couchpotato, i.e. " --config_file=/home/couchpotato/couchpotato.ini"
+CP_OPTS=<%= @extra_daemon_opts %>
+
+<% end -%>
+<% if @extra_ssd_opts -%>
+#$EXTRA_SSD_OPTS, extra start-stop-daemon option like " --group=users"
+SSD_OPTS=<%= @extra_ssd_opts %>
+<% end -%>

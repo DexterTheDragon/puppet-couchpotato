@@ -7,5 +7,5 @@ summary       'Module to install couchpotato'
 description   'Installs and configures couchpotato'
 project_page  'https://github.com/DexterTheDragon/puppet-couchpotato'
 
-dependency 'puppetlabs/stdlib'
-dependency 'puppetlabs/vcsrepo'
+dependency 'puppetlabs/stdlib', '>= 0'
+dependency 'puppetlabs/vcsrepo', '>= 0'

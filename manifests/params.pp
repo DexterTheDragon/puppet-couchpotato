@@ -8,10 +8,12 @@ class couchpotato::params {
     'Debian': {
       $package_name = 'couchpotato'
       $service_name = 'couchpotato'
+      $init_file    = 'ubuntu'
     }
     'RedHat', 'Amazon': {
       $package_name = 'couchpotato'
       $service_name = 'couchpotato'
+      $init_file    = 'fedora'
     }
     default: {
       fail("${::operatingsystem} not supported")
