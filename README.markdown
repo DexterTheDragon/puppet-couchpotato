@@ -74,6 +74,6 @@ Only tested on Ubuntu currently, but should work on RedHat
 * Commit your changes
 * Send me a pull request. Bonus points for topic branches.
 
-##Release Notes/Contributors/Etc **Optional**
+##Release Notes
 
 See the [CHANGELOG](https://github.com/DexterTheDragon/puppet-couchpotato/blob/master/CHANGELOG)
